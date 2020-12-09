@@ -5,7 +5,7 @@ $(document).ready(function () {
     let 
         opspark = window.opspark,
         game = opspark.createGame(create, update),
-        lives = 3;
+        lives = 50;
         
     function create() {
         game.opspark.init();
@@ -24,6 +24,9 @@ $(document).ready(function () {
         const textOpts = { fontSize: '32px', fill: '#000' };
         game.score = game.add.text(16, 16, 'Score: 0', textOpts);
         game.lives = game.add.text(16, 70, 'Lives: ' + lives, textOpts);
+        game.title = game.add.text(16, 100, 'Hey you can knock the balls out the way and kill the turrets!');
+        game.title = game.add.text(16, 150, 'When on floor dont press down :]');
+       
     }
 
 
