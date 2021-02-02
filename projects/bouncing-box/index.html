@@ -8,24 +8,27 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-image: <img src="projects/reading/something.png" alt="Big Box">
-            background-color: teal;
 			font-size: 300%;
 			text-align: center;
 			display: block;
 			position: absolute;
 			top: 100px;
 			left: 0px;  /* <--- Change me! */
-		
+		    margin: auto;
         }
-        .body {
-            background-color: black;
+        
+         .board {
+         background-image: url('/projects/bouncing-box/reading/meme.png');
         }
+            
+
+        
+        
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 </head>
-<body class="board">
+<body class="board" img="/projects/bouncing-box/reading/something.png">
 	<!-- HTML for the box -->
 	<div class="box">?</div>
 
@@ -67,6 +70,7 @@
             var postionX = 0;
             var points = 0;
             var speed = 0;
+            var postionY = 0;
 
 
 			
@@ -88,6 +92,9 @@
                 if (postionX < 0) {
                     speed = - speed;
                 }
+
+              
+
 
                 
 				
