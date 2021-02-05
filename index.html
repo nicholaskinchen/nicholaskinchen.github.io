@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Nicholas's Amazing Website</title>
+        <title style="font-family:monospace;font-size:20px">Nicholas's Amazing Website</title>
         <style>
+    title {
+        font-family: monospace;
+    }
     body {
         background: rgb(208, 255, 0);
         color: rgb(0, 0, 0);
@@ -12,6 +15,9 @@
     #all-contents {
         max-width: 800px;
         margin: auto;
+    }
+    .script {
+        size: 50px;
     }
 
     /* navigation menu */
@@ -75,10 +81,81 @@
     </head>
 
     <body>
+        
         <!--All content goes here -->
         <div id="all-contents">
             <nav>
-                <h1>Nicholas's Website</h1>
+                <!-- this script got from www.htmlbestcodes.com coded by: Kerixa Inc. -->
+<!-- this script got from www.htmlbestcodes.com-Coded by: Krishna Eydat -->
+
+
+<script>
+var text="Nicholas's Website" // YOUR TEXT
+var speed=80 // SPEED OF FADE
+
+
+// ********** LEAVE THE NEXT BIT ALONE!
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</b>
+
+<br/>
+
+                
                 <ul id="nav-ul">
                     <li class="nav-li">
                         <a href="Index.html"> Home </a>
@@ -92,6 +169,81 @@
             <main>
                 <!--Sidebar section-->
                 <div class="sidebar">
+                    <!-- this script got from www.htmlbestcodes.com coded by: Kerixa Inc. -->
+<!-- this script got from www.htmlbestcodes.com-Coded by: Krishna Eydat -->
+<html>
+<head>
+</head>
+<body>
+<b>
+
+<script>
+var text="Sad Boy, picture of me :)" // YOUR TEXT
+var speed=80 // SPEED OF FADE
+
+// ********** LEAVE THE NEXT BIT ALONE!
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</b>
+
+<br/>
+<p><a target="_blank" href="http://www.htmlbestcodes.com/"><span style="font-size: 8pt; text-decoration: none">HTML Best Codes</span></a></p>
+</body>
+</html><a target='_blank' href='http://www.htmlbestcodes.com/' style='font-size: 8pt; text-decoration: none'>HTML Codes</a>
                 <img class="sidebar-img" src="sadness fixed.png" alt="Hello darkness my old friend.">
                 <p style="font-family:Brush Script MT;font-size:20px">Sad Boy, picture of me yes</p>
 
@@ -109,7 +261,8 @@
                                 <li>Gaming</li>
                                 <li>Coding</li>
                             <ul>
-                    </p>
+                    I don't really want to change my home page right now so check out my portfolio it's cooler.
+                            </p>
                 </div>
 
             </main>
