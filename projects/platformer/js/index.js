@@ -1,11 +1,38 @@
 /* global Phaser */
 $(document).ready(function () {
+    var randoms = Math.random(1, 100);
+  
+    if (randoms <= .80){
+        randoms = 1;
+    }{if (randoms < .81)
+        randoms = 2;
+    }{if  (randoms < .82)
+        randoms = 3;
+    }{if (randoms < .83)
+        randoms = 4;
+    }{if (randoms < .84)
+        randoms = 5;
+    }{if (randoms < .85)
+        randoms = 6;
+    }{if (randoms < .86)
+        randoms = 7;
+    }{if (randoms < .87)
+        randoms = 8;
+    }{if (randoms < .88)
+        randoms = 9;
+    }{if (randoms < .89)
+        randoms = 10;
+    }
+     
+        
+   
+    
     'use strict';
     window.opspark = window.opspark || {};
     let 
         opspark = window.opspark,
         game = opspark.createGame(create, update),
-        lives = 25;
+        lives = randoms 
         
     function create() {
         game.opspark.init();
