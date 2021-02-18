@@ -6,7 +6,7 @@ echo Does pineapple go on pizza?(Yes/No --- Cap's Sensitive)
 
 set/p "cho=>"
 
- if %cho%==Yes goto BAD
+ if %cho%==Yes goto GOOD
  
  if %cho%==No goto GOOD
  
