@@ -1,0 +1,7 @@
+for(var i = 0; i < 5; i++) {
+            var buildingHeight = Math.random() * 400;
+            var building = draw.rect(75,buildingHeight,'LightGray','Black',1);
+            building.x = 400*i;
+            building.y = groundY-buildingHeight;
+            background.addChild(building);
+            buildings.push(building);
