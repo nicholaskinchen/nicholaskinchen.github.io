@@ -38,7 +38,7 @@ var background = function (window) {
             // TODO: 2 - Part 2
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
-            var backgroundFill = draw.rect(2000, 375,'Black');
+            var backgroundFill = draw.rect(canvasWidth, groundY,'Black');
             background.addChild(backgroundFill);
             
             // TODO: 3 - Add a moon and starfield
@@ -68,8 +68,8 @@ var background = function (window) {
                 buildings.push(building);
             }
 
-            // TODO 4: Part 1 - Add a tree
-            tree = draw.bitmap('img/tree.png');
+            // TODO 4: Part 1 - ?>>Add a tree
+            tree = draw.bitmap();
             tree.x =  700;
             tree.y = 125;
             background.addChild(tree);

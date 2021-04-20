@@ -39,7 +39,7 @@ var init = function (window) {
 
     var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
         '20px Arial',
-        '#ccc', 'left');
+        '#000000', 'left');
     help.x = 10;
     help.y = ground.y + ground.getBounds().height + 10;
     view.addChild(help);

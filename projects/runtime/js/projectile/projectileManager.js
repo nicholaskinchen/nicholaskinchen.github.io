@@ -21,8 +21,8 @@
             var projectile = _.extend(draw.circle(5, '#FE1EFE'), physikz.makeBody('projectile'));
             
             // TODO : get from settings JSON //
-            projectile.volatility = 10;
-            projectile.velocityMax = 10;
+            projectile.volatility = 100;
+            projectile.velocityMax = 100;
             
             projectile.handleCollision = function (impact) {
                 // TODO : Consider if particles are necessary here //
@@ -68,7 +68,7 @@
                 //console.log(projectile.rotation);
                 
                 degrees = emitter.rotation;
-                projectile.velocityX = 10; //Math.cos(physikz.degreesToRadians(degrees)) * (projectile.velocityMax + emitter.velocityX || 0);
+                projectile.velocityX = 100; //Math.cos(physikz.degreesToRadians(degrees)) * (projectile.velocityMax + emitter.velocityX || 0);
                 projectile.velocityY = 0; //Math.sin(physikz.degreesToRadians(degrees)) * (projectile.velocityMax + emitter.velocityY || 0);
                 projectile.rotationalVelocity = 0;
                 
@@ -80,7 +80,7 @@
                 projectile.x = projectilePoint.x;
                 projectile.y = projectilePoint.y;
                 
-                createjs.Tween.get(projectile, {override: true}).wait(500).to({alpha: 0, scaleX: 0.1, scaleY: 0.1}, 1000, createjs.Ease.linear).call(onTweenComplete);
+                createjs.Tween.get(projectile, {override: true}).wait(1).to({alpha: 0, scaleX: 175, scaleY: 175}, 1000, createjs.Ease.linear).call(onTweenComplete);
                 
                 view.addChild(projectile);
                 space.push(projectile);
