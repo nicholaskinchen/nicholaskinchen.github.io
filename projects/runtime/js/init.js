@@ -37,7 +37,7 @@ var init = function (window) {
     view.addChild(background);
 
 
-    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
+    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!                                            The bad guy is vbuc and good guy is cringe', 
         '20px Arial',
         '#000000', 'left');
     help.x = 10;
