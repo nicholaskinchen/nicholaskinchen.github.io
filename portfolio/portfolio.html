@@ -1,128 +1,17 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("ul").scroll(function(){
+              });
+            });
+            </script>
+            <link rel="stylesheet" href="portfolio.css">
         <link rel="shortcut icon" href="https://bsaber.com/wp-content/uploads/2020/07/40f011879ab6c84f9bc0a13fa551fff5da576d12.png" />
-        <title>( ͡° ͜ʖ ͡°) DANK MEMES ( ͡° ͜ʖ ͡°)</title>
-        <style type="text/css">
-            body {
-                background-image: url(matrix.gif) ;
-                background-color:rgb(245, 238, 219)
-                color: rgb(0, 0, 0);
-                padding: 10px;
-                font-family: Courier;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                 background-size: cover;
-            }
-            header {
-                font-size: 1.5em;
-                font-weight: bold;
-                margin: 0 auto;
-                padding: 10px;
-            }
-            
-            #all-contents {
-                max-width: 800px;
-                margin: auto;
-            }
-    
-            /* navigation menu */
-            nav {
-                background: black;
-                margin: 0 auto;
-                display: flex;
-                padding: 15px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-            }
-            h1 {
-                display: flex;
-                align-items: center;
-                color: darkgreen;
-                flex: 1;
-                margin: 0 auto;
-                margin-bottom:20px;
-
-            }
-            #nav-ul {
-                list-style-image: none;
-            }
-            .nav-li {
-                display: inline-block;
-                padding: 0 10px;
-                color:darkgreen;
-            }
-            .nav-a {
-                text-decoration: none;
-                color:darkgreen;
-            }
-    
-            /* main container area beneath menu */
-            main {
-                background: rgb(0, 0, 0);
-                display: flex;
-                border-radius: 15px;
-            }
-            .content {
-                flex: 1;
-                padding: 15px;
-                border-radius: 15px;
-               
-            
-            }
-            /* portfolio styles */
-            .content h1 {
-                color: darkgreen;
-            }
-            
-            #portfolio {
-                list-style-type: none;
-                padding-left: 0;
-            }
-            
-            #portfolio li {
-                background: black;
-                padding: 10px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
-            
-            #portfolio li:hover {
-                background:rgb(30, 30, 30)
-            } 
-            
-            #portfolio a {
-                text-decoration: none;
-                color: darkgreen;
-            }
-            a {
-                text-decoration:none;
-                color: darkgreen;
-            }
-            .button {
-                background-color: #4CAF50;
-                 border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                 display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            }
-            #green {
-                color: darkgreen;
-            }
-            #black {
-                color: black;
-            }
-            .portfoliocolor {
-                font-size: 30px;
-            }
+        <title>( ͡° ͜ʖ ͡°) My Portfolio ( ͡° ͜ʖ ͡°)</title>
         
-            
-        </style>
     </head>
         
 
@@ -142,7 +31,7 @@
             <main>
                 <div class="content">
                     <h1>Portfolio</h1>
-                        <ul style="list-style-type:disc" id="portfolio">
+                        <ul style="list-style-type:disc;overflow: scroll;" id="portfolio">
                             <li><a href="/projects/platformer/index.html">Platformer</a></li>
                             <li><a href="/projects/bouncing-box/index.html">Bouncing Box</a></li>
                             <li><a href="/projects/circularity/">Circularity</a></li>
