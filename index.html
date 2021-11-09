@@ -1,87 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title style="font-family:monospace;font-size:20px">Yes</title>
-        <style>
-    title {
-        font-family: Comic Sans MS;
-    }
-    body {
-        background: rgb(208, 255, 0);
-        color: rgb(0, 0, 0);
-        padding: 10px;
-        font-family: Courier;
-    }
-    #all-contents {
-        max-width: 800px;
-        margin: auto;
-    }
-    .script {
-        size: 50px;
-    }
-
-    /* navigation menu */
-    nav {
-        background: rgb(200, 100, 20);
-        margin: 0 auto;
-        margin-bottom: 20px;
-        display: flex;
-        padding: 10px;
-        border-radius: 15px;
-    }
-    h1 {
-        display: flex;
-        align-items: center;
-        color: rgb(0, 0, 0);
-        flex: 1;
-        margin: 0;
-    }
-    #nav-ul {
-        list-style-image: none;
-    }
-    .nav-li {
-        display: inline-block;
-        padding: 0 10px;
-    }
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    /* main container area beneath menu */
-    main {
-        background: rgb(245, 238, 219);
-        display: flex;
-        border-radius: 15px;
-    }
-    .sidebar {
-        margin-right: 25px;
-        padding: 10px;
-    }
-    .sidebar-img {
-        width: 175px;
-        height: 200px;
-
-    
-    }
-    .content {
-        flex: 1;
-        padding: 15px;
-        border-radius: 10px;
-    }
-    #interests {
-        border: 4px silver ridge;
-        padding: 8px;
-        border-radius: 13px;
-    }
-    h2, h3 {
-        margin: 0px;
-    }
-    #highlight {
-        font-size:x-large;
-        padding: 10px;
-    }
-</style>
+        <link rel="stylesheet" href="index.css">
+        <script src="title.js"></script>
+        <title style="font-family:monospace;font-size:20px">Nicholas Kinchen's Website</title>
     </head>
 
     <body>
@@ -89,113 +11,40 @@
         <!--All content goes here -->
         <div id="all-contents">
             <nav>
-                
-
-<script id="demo">
-var text="Nicholas's Website" // YOUR TEXT
-var speed=65 // SPEED OF FADE
-
-
-// ********** LEAVE THE NEXT BIT ALONE!
-
-
-if (document.all||document.getElementById){
-document.write('<span id="highlight">' + text + '</span>')
-var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
-}
-else
-document.write(text)
-var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
-var r=1
-var g=1
-var b=1
-var seq=1
-function changetext(){
-rainbow="#"+hex[r]+hex[g]+hex[b]
-storetext.style.color=rainbow
-}
-function change(){
-if (seq==6){
-b--
-if (b==0)
-seq=1
-}
-if (seq==5){
-r++
-if (r==12)
-seq=6
-}
-if (seq==4){
-g--
-if (g==0)
-seq=5
-}
-if (seq==3){
-b++
-if (b==12)
-seq=4
-}
-if (seq==2){
-r--
-if (r==0)
-seq=3
-}
-if (seq==1){
-g++
-if (g==12)
-seq=2
-}
-changetext()
-}
-function starteffect(){
-if (document.all||document.getElementById)
-flash=setInterval("change()",speed)
-}
-starteffect()
-
-</script>
-
-
-<br/>
-
-                
-                <ul id="nav-ul">
+         
+        <br/>
+            <ul id="nav-ul">
                     <li class="nav-li">
                         <a href="portfolio/portfolio.html"> Portfolio </a>
                     </li>
                     <li class="nav-li">
                         <a href="Friends.html">Friends Website Links</a>
-
                     </li>
                 </ul>
             </nav>
 
-            <main>
-                <!--Sidebar section-->
-                <div class="sidebar">
-                <img class="sidebar-img" src="sadness-fixed.png" alt="Hello darkness my old friend.">
-                <p style="font-family:Brush Script MT;font-size:20px">Blurred Picture Of Me</p>
-
-
-                </div>
-                <!--CONTENT SECTION-->
-                <div class="content">
-                    <h2>Nicholas Kinchen</h2>
-                    <p>Student at Northshore Highshool
-                    <!--Interests section-->
-                    <div id=interests>
-                        <h3>Interests</h3>
-                            <ul>
-                                <li>Computers</li>
-                                <li>Gaming</li>
-                                <li>Coding</li>
-                            <ul>
+        <main>
+            <!--Sidebar section-->
+            <div class="sidebar">
+            <img class="sidebar-img" src="sadness-fixed.png" alt="Hello darkness my old friend.">
+            <p style="font-family:Brush Script MT;font-size:20px">Blurred Picture Of Me</p>
+            </div>
+            <!--CONTENT SECTION-->
+            <div class="content">
+                <h2>Nicholas Kinchen</h2>
+                <p>Student at Northshore Highshool
+                <!--Interests section-->
+                <div id=interests>
+                    <h3>Interests</h3>
+                        <ul>
+                            <li>Computers</li>
+                            <li>Gaming</li>
+                            <li>Coding</li>
+                        <ul>
                     
-                            </p>
+                    </p>
                 </div>
-
             </main>
-
         </div>
     </body>
 </html>
