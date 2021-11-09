@@ -4,6 +4,13 @@
         <link rel="stylesheet" href="index.css">
         <script src="title.js"></script>
         <title style="font-family:monospace;font-size:20px">Nicholas Kinchen's Website</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("div.interests").scroll(function(){
+              });
+            });
+            </script>
     </head>
 
     <body>
@@ -27,22 +34,16 @@
             <!--Sidebar section-->
             <div class="sidebar">
             <img class="sidebar-img" src="sadness-fixed.png" alt="Hello darkness my old friend.">
-            <p style="font-family:Brush Script MT;font-size:20px">Blurred Picture Of Me</p>
+            <p style="font-family:Brush Script MT;font-size:15px">Blurred Picture Of Me</p>
             </div>
             <!--CONTENT SECTION-->
             <div class="content">
                 <h2>Nicholas Kinchen</h2>
-                <p>Student at Northshore Highshool
+                <p>Student at Northshore Highshool</p>
                 <!--Interests section-->
-                <div id=interests>
-                    <h3>Interests</h3>
-                        <ul>
-                            <li>Computers</li>
-                            <li>Gaming</li>
-                            <li>Coding</li>
-                        <ul>
-                    
-                    </p>
+                <div class="interests" style="border:1px solid black;width:550px;height:200px;overflow-y:scroll;overflow-x: scroll;overflow-wrap: break-word;">
+                   I am Nicholas Kinchen, I want to go some kind of Technical School to learn about Web Developement. I think that I am best with the front end of code that goes into making websites. The backend of the code is being put on the back burners for now. I am probably going to go to VoTech, atleast that's where my parents said I am going to be going. I would try to go to some other type of college that has Web Developement. Then I am going to try to make websites out to start then go on from there. That is all that I have planned currently nothing is in stone. If you want I have all of the things that I have done currently in my portfolio at the top of this page.
+                    </div>
                 </div>
             </main>
         </div>

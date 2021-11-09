@@ -58,6 +58,7 @@
     .sidebar-img {
         width: 175px;
         height: 200px;
+        overflo
 
     
     }
@@ -65,11 +66,6 @@
         flex: 1;
         padding: 15px;
         border-radius: 10px;
-    }
-    #interests {
-        border: 4px silver ridge;
-        padding: 8px;
-        border-radius: 13px;
     }
     h2, h3 {
         margin: 0px;
