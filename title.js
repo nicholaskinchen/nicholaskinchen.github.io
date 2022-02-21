@@ -1,5 +1,6 @@
 var text="Nicholas's Website" // YOUR TEXT
-var speed=65 // SPEED OF FADE
+var speed=65
+ // SPEED OF FADE
 
 
 // ********** LEAVE THE NEXT BIT ALONE!

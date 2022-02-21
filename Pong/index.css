@@ -1,0 +1,64 @@
+
+body {
+    background-color: darkgreen;
+  }
+  
+  #board {
+    width: 440px;
+    height: 440px;
+    border: 1px solid white;
+    background-color: black;
+    position: relative;
+  }
+
+  #leftPaddle {
+    width: 10px;
+    height: 100px;
+    left: 428px;
+    top: 34px;
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+  }
+
+  #rightPaddle {
+    width: 10px;
+    height: 100px;
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+  }
+
+  #theBall {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+  }
+  #scorePlayer1 {
+    font-size: 3vw;
+    color: white;
+    font-family: "Lucida Console";
+    position:absolute;
+      left: 25px ;
+      top: 25px ;
+      
+      
+  }
+  #scorePlayer2 {
+    font-size: 3vw;
+    color: white;
+    font-family: "Lucida Console";
+    position:absolute;
+      left: 375px ;
+      top: 25px ;
+      
+      
+  }
+  #button {
+    color:red;
+    position:absolute;
+    left: 175px ;
+    top:200px;
+  }
