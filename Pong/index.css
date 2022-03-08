@@ -58,6 +58,7 @@ body {
   }
   #button {
     color:red;
+    font: Monospace;
     position:absolute;
     left: 175px ;
     top:200px;

@@ -1,15 +1,11 @@
 /* global $, sessionStorage */
-
 $(document).ready(runProgram); // wait for the HTML / CSS elements of the page to fully load, then execute runProgram()
 
-
-  
 function runProgram(){
   $("#a1").hide();
   ////////////////////////////////////////////////////////////////////////////////
   //////////////////////////// SETUP /////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
-
   // Constant Variables
   const FRAME_RATE = 60;
   const FRAMES_PER_SECOND_INTERVAL = 1000 / FRAME_RATE;
@@ -23,7 +19,6 @@ function runProgram(){
   }
   var scorePlayer1 = 0;
   var scorePlayer2 = 0;
-  
   // Game Item Objects
   function GameItem(y, x, speedY, speedX, id) {
     var item = {  
@@ -44,11 +39,9 @@ function runProgram(){
   let interval = setInterval(newFrame, FRAMES_PER_SECOND_INTERVAL);   // execute newFrame every 0.0166 seconds (60 Frames per second)
   $(document).on('keydown', handleKeyDown);
   $(document).on('keyup', handleKeyUp);                           // change 'eventType' to the type of event you want to handle
-
   ////////////////////////////////////////////////////////////////////////////////
   ///////////////////////// CORE LOGIC ///////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
-
   /* 
   On each "tick" of the timer, a new frame is dynamically drawn using JavaScript
   by calling this function and executing the code inside.
@@ -68,7 +61,6 @@ function runProgram(){
     
 
   }
-  
   /* 
   Called in response to events.
   */
@@ -102,8 +94,6 @@ function runProgram(){
     }
 
   }
-  
-
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
@@ -134,18 +124,10 @@ function runProgram(){
 		
 }
 
-
-
 function drawScore() {
   $("#scorePlayer1").text(scorePlayer1);
   $("#scorePlayer2").text(scorePlayer2);
 }
-
-
-
-
-
-
 
 function updatePosition(player) {
   player.y += player.speedY;
@@ -237,7 +219,4 @@ function changeBallSpeed() {
       $("#a1").show();
     }
   }
-
-
-  
 }
